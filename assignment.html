@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First React App</title>
+  </head>
+  <body>
+     <div id="app"></div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+     <script type="text/babel">
+        class ParagraphIntro extends React.Component {
+         render() {
+           return (
+             <div>
+               <p>This is a paragraph. It would probably have some introductory text, but I'm not creative enough to come up with text. Hello, again!</p>
+             </div>
+           );
+         }
+       }
+
+       ReactDOM.render(
+         <ParagraphIntro />, document.getElementById('app')
+       );
+   </script>
+  </body>
+</html>
