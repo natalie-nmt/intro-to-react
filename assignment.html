@@ -10,10 +10,17 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
      <script type="text/babel">
         class ParagraphIntro extends React.Component {
+          constructor(props){
+            super(props);
+            this.state = {
+              day: 1
+            }
+          }
          render() {
            return (
              <div>
                <p>This is a paragraph. It would probably have some introductory text, but I'm not creative enough to come up with text. Hello, again!</p>
+               <p><em>It's day {this.state.day} of the rest of your life!</em></p>
              </div>
            );
          }
